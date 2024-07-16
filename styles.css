@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1117;
+    color: #f0f0f0;
+    overflow: hidden;
+}
+
+.maintenance-container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.construction-sign img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.maintenance-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.maintenance-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #cccccc;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: #333;
+    color: #f0f0f0;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus {
+    border-color: #3b5998;
+    outline: none;
+}
+
+.notify-button {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.notify-button:hover {
+    background-color: #2d4373;
+    transform: scale(1.05);
+}
+
+.notify-button:active {
+    transform: scale(1);
+}
+
+.facebook-button {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #ffffff;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.facebook-button:hover {
+    background-color: #2d4373;
+    transform: scale(1.05);
+}
+
+.facebook-button:active {
+    transform: scale(1);
+}
